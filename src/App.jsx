@@ -49,8 +49,8 @@ function App() {
                     </svg>
                   </div>
                 </div>
-                <div className={`absolute mt-[10px] overflow-hidden flex overflow-y-auto rounded-[24px] transition-all duration-300 cursor-pointer px-[18px] ${dropdown1 ? 'py-[14px] max-h-[154px]' : 'py-0 max-h-0'} bg-black w-full sm:w-[110px]`}>
-                  <ul className='flex flex-col gap-[10px] w-full'>
+                <div className={`absolute mt-[10px] overflow-hidden flex rounded-[24px] transition-all duration-300 cursor-pointer px-[18px] ${dropdown1 ? 'py-[14px] max-h-[154px]' : 'py-0 max-h-0'} bg-black w-full sm:w-[110px]`}>
+                  <ul className='flex flex-col gap-[10px] overflow-y-auto w-full'>
                     {Object.keys(rates).map((rate, index) => (
                       <li onClick={() => {
                         setCurrency1(rate);
@@ -70,8 +70,8 @@ function App() {
                     </svg>
                   </div>
                 </div>
-                <div className={`absolute mt-[10px] overflow-hidden overflow-y-auto flex rounded-[24px] transition-all duration-300 cursor-pointer px-[18px] ${dropdown2 ? 'py-[14px] max-h-[154px]' : 'py-0 max-h-0'} bg-black w-full sm:w-[110px]`}>
-                  <ul className='flex flex-col gap-[10px] w-full'>
+                <div className={`absolute mt-[10px] overflow-hidden flex rounded-[24px] transition-all duration-300 cursor-pointer px-[18px] ${dropdown2 ? 'py-[14px] max-h-[154px]' : 'py-0 max-h-0'} bg-black w-full sm:w-[110px]`}>
+                  <ul className='flex flex-col gap-[10px] overflow-y-auto w-full'>
                     {Object.keys(rates).map((rate, index) => (
                       <li key={index} onClick={() => {
                         setCurrency2(rate);
